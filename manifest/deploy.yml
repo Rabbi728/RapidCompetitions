@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ostadassignmant
+  namespace: production
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ostadassignmant
+  template:
+    metadata:
+      labels:
+        app: ostadassignmant
+    spec:
+      containers:
+      - name: ostadassignmant
+        image: rabbi728/ostadassignmant:latest
+        ports:
+        - containerPort: 3000

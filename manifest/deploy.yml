@@ -17,4 +17,4 @@ spec:
       - name: ostadassignmant
         image: rabbi728/ostadassignmant:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 8000

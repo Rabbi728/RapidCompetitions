@@ -29,12 +29,6 @@ var/
 .installed.cfg
 *.egg
 
-# Database
-db.sqlite3
-
-# Environment variables
-.env
-
 # IDE
 .idea/
 .vscode/

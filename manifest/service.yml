@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ostadassignmant-service
+  name: ostad-service
   namespace: production
 spec:
-  type: ClusterIP
   selector:
-    app: ostadassignmant
+    app: ostad-app
   ports:
     - protocol: TCP
-      port: 80
+      port: 8000
       targetPort: 8000
+  type: NodePort
+
